@@ -1,4 +1,4 @@
-<section class="ftco-section" data-sly-use.latestnews="com.readit.core.models.LatestNewsUse">
+<section class="ftco-section" data-sly-use.latestnews="${'com.readit.core.models.LatestNewsModel' @ color123='blue'}">
    		<div class="container">
    			<div class="row">
    				<div class="col-md-12">
@@ -10,12 +10,13 @@
    							<div class="col-md-6 col-lg-6 col-xl-4 d-flex">
    								<div class="text w-100 pl-md-3">
     							<span class="subheading">${latestnews.text}</span>
-   									<h2><a href="${latestnews.path @ extension='html'}">${latestnews.title} - ${latestnews.allowedTemplates}</a></h2>
+   									<h2><a href="${latestnews.path @ extension='html'}">${latestnews.title}</a></h2>
    									<ul class="media-social list-unstyled">
 			                <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-twitter"></span></a></li>
 			                <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-facebook"></span></a></li>
 			                <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-instagram"></span></a></li>
 			              </ul>
+                          ${latestnews.resourceType} 
    									<div class="meta">
    										<p class="mb-0"><a href="#">${latestnews.date}</a></p>
    									</div>
