@@ -5,5 +5,6 @@ import java.util.List;
 public interface ArticleService {
 	
 	List<ArticleBean> getListOfArticles();
+	String getArticlePath();
 
 }

@@ -65,5 +65,9 @@ public class ArticleServiceImpl implements ArticleService {
 
 		return articleList;
 	}
-
+	
+	@Override
+	public String getArticlePath() {
+		return articlePath;
+	}
 }
